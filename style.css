@@ -407,7 +407,7 @@ text-align: left;
   gap: 24px;
   align-items: center;
 }
- .tabels1:nth-child(1){
+ .tabels1 tr:nth-child(1){
   color: #6A718A;
 }
 .tabels1:nth-child(3){
@@ -476,10 +476,180 @@ color: #26306A;
   width: 140px;
   border-radius: 3px;
 }
+.main3-cards{
+  display: flex;
+  gap: 30px;
+}
 .main3-cards1{
+  display: flex;
+  flex-direction: column;
+  gap: 48px;
+  justify-content: left;
   max-width: 375px;
   background-color: white;
+  padding: 100px 88px 102px 50px;
 }
+.main3-cards1 img{
+  width: 38px;
+height: 38px;
+}
+.for-fonts{
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+.for-fonts h1{
+font-size: 19px;
+font-weight: 600;
+line-height: 24px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #40476C;
+}
+.for-fonts p{
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: #8C9298;
+}
+.for-linking{
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+.for-linking h1{
+  width: 130px;
+  height: 24px;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  text-align: center;
+  color: #56B2FF;
+}
+.for-linking img{
+  width: 18px ;
+  height: 10px;
+}
+.main3-sector{
+  margin-bottom: 140px;
+}
+/* main4 */
+.main4-section{
+  padding: 120px 0 100px 0;
+  background-image: url(./images/mainimage.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  color: white;
+}
+.main4-sector-fonts-head{
+   display: flex;
+   flex-direction: column;
+   gap: 18px;
+}
+.main4-sector-fonts-head h1{
+  font-size: 39px;
+  font-weight: 600;
+  line-height: 50px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.main4-sector-fonts-head div{
+  width: 140px;
+  border: 2px solid #25A1FF
+}
+.main4-sector-fonts{
+  display: flex;
+  flex-direction: column;
+  gap: 22px;
+}
+.start-io1{
+  display: flex;
+  gap: 8px;
+}
+.start-io1 h1{
+font-size: 19px;
+font-weight: 400;
+line-height: 24px;
+letter-spacing: 0.02em;
+text-align: left;
+color: #CCCED9;
+}
+.fonts-start-io1{
+  margin-top: 58px;
+  display: flex;
+  margin-right: 70px;
+  flex-direction: column;
+  gap:24px ;
+}
+
+.center-line{
+  margin-top: 58px;
+margin-right: 31px;
+  width: 0;
+height: 320px;
+border: 2px solid #FFFFFF0F
+}
+.main4-sector-fonts-start{
+  display: flex;
+}
+.fonts-start-io2{
+  margin-top: 58px;
+  margin-right: 114px;
+  max-width: 561px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+}
+.fonts-start-io2 h1{
+  font-size: 28px;
+  font-weight: 600;
+  line-height: 38px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.fonts-start-io2 p{
+  margin-top: 28px;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #AEB1BF;
+}
+.fonts-start-io2 li{
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+color: #E9EAF0;
+}
+.fonts-start-io2 ul{
+  margin-top: 32px;
+  padding-left: 35px;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
@@ -500,6 +670,19 @@ color: #26306A;
   }
   .main1-cards1:nth-child(6){
     display: none;
+  }
+  .main3-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    align-items: center;
+    justify-content: center;
+  }
+  .main3-cards1{
+    padding: 24px 8px 23px 14px;
+    gap: 24px;
+  }
+  .for-fonts{
+    gap: 12px;
   }
 }
 @media (max-width:1275px) {
@@ -617,8 +800,43 @@ text-align: center;
     width: 100%;
     margin-top: 40px;
   }
+  .no-use-responsive{
+    display: none;
+  }
+  .for-linking{
+    display: none;
+  }
+  .main3-hade h1{
+    font-size: 33px;
+    font-weight: 600;
+    line-height: 40px;
+    letter-spacing: 0.02em;
+  }
+ 
+  .main3-hade{
+    align-items: start;
+  }
+  .for-fonts h1{
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+  }
+  .for-fonts p{
+font-size: 10px;
+font-weight: 400;
+line-height: 14px;
+  }
+  .main3-cards{
+    gap: 13px;
+  }
 }
   @media (max-width:959px ) {
+    .main3-sector{
+      margin: 0 0  40px 0;
+    }
+    .main3-cards{
+      grid-template-columns: 1fr 1fr;
+    }
     .table-head h1{
 padding: 12px 20px 12px 20px;
 font-size: 14px;
