@@ -35,7 +35,7 @@ button {
   
   body {
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(94.21deg, rgba(252, 229, 182, 0.087) 3.29%, rgba(242, 191, 234, 0.087) 97.52%);
+    background: linear-gradient(94.21deg, rgba(231, 180, 80, 0.087) 3.29%, rgba(236, 52, 209, 0.087) 97.52%);
   }
   .main-header-section{
     padding: 42px 0 50px 0 ;
@@ -475,6 +475,10 @@ color: #26306A;
   border: 2px solid #25A1FF;
   width: 140px;
   border-radius: 3px;
+}
+.main3-cards1{
+  max-width: 375px;
+  background-color: white;
 }
 
 
