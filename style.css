@@ -4,7 +4,7 @@
     box-sizing: border-box;
 }
 .container{
-    max-width: 1590px;
+    max-width: 1630px;
     width: 100%;
     margin: 0 auto;
     padding: 0 20px;
@@ -35,7 +35,7 @@ button {
   
   body {
     font-family: "Roboto", sans-serif;
-    color: white;
+    background: linear-gradient(94.21deg, rgba(252, 229, 182, 0.087) 3.29%, rgba(242, 191, 234, 0.087) 97.52%);
   }
   .main-header-section{
     padding: 42px 0 50px 0 ;
@@ -267,12 +267,16 @@ margin: 80px 0;
 gap: 12px;
 margin-bottom: 37px;
 }
-.main1-cards1-deatils h1{
+
+
+
+.main1-cards1-image1 h1{
   font-size: 23px;
   font-weight: 600;
   line-height: 32px;
   letter-spacing: 0.02em;
   text-align: center;
+  color: white;
 }
 .main1-cards1-deatils p{
 font-size: 12px;
@@ -289,15 +293,19 @@ color: #CCCED9;
 }
 .main1-cards1-image1{
   display: flex;
+  flex-direction: column;
   align-items: center;
   justify-content: center;
-  margin-bottom: 18px;
+  gap: 18px;
+  margin-bottom: 12px;
 }
+
 .main1-cards1-time h1{
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
   text-align: center;
+  color: white;
 }
 .main1-cards1-time button{
   font-size: 16px;
@@ -324,15 +332,186 @@ border-radius: 6px;
 opacity: 0px;
 background-color: #25A1FF;
 }
+/* main2 */
+.main-sector-tabel{
+  margin-bottom:140px ;
+}
+.main-fortable{
+  display: flex;
+  flex-direction: column;
+
+}
+.table-head{
+  max-width: 506px;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+  display: flex;
+}
+.table-detils{
+  border: 1px solid #E9EAF0;
+}
+.table-head h1{
+  padding: 12px 24px;
+font-size: 16px;
+border-radius: 10px;
+font-weight: 500;
+background-color: #EEF7FF99;
+line-height: 24px;
+text-align: left;
+color: #0091FF;
+}
+.table-head h1:hover{
+  background-color:#cfe5f6 ;
+  transition: all 0.3s ease-in-out;
+}
+.table-detils-head{
+  display: flex;
+  gap: 80px;
+  height: 70px;
+  align-items: center;
+  padding-left: 24px;
+  border-bottom:1px solid #E9EAF0 ;
+}
+.table-detils-head h1{
+  max-width: 190px;
+  width: 100%;
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+text-align: left;
+color: #6A718A;
+}
+.table-detils-head2{
+  display: flex;
+  justify-content: space-between;
+  height: 77px;
+  padding: 0 24px;
+
+}
+.table-header{
+  display: flex;
+  gap: 80px;
+  align-items: center;
+}
+.tabels1{
+  width: 190px;
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: left;
+}
+.table-links{
+  display: flex;
+  width: 176px;
+  gap: 24px;
+  align-items: center;
+}
+ .tabels1:nth-child(1){
+  color: #6A718A;
+}
+.tabels1:nth-child(3){
+  color: #6A718A;
+}
+.tabels1:nth-child(4){
+  color: #6A718A;
+}
+.tabels1:nth-child(5){
+  color: #6A718A;
+}
+.table-links h1{
+  border: 1px solid #0070E4 ;
+  border-radius: 4px ;
+  padding-top:9px ;
+  background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
+  background-clip: text;
+  color: transparent;
+  width: 72px;
+  height: 37px;
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 17px;
+  text-align: center;
+}
+.button-table{
+  width: 158px;
+height: 58px;
+gap: 10px;
+border-radius: 4px ;
+background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
+color: white;
+font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+text-align: center;
+margin: 76px  auto 0 auto;
+}
+.table-detils-head h1:nth-child(1){
+  display: none;
+}
+.tabel-rack{
+  display: none
+}
+/* main3 */
+.main3-section{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.main3-hade{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 18px;
+}
+.main3-hade h1{
+font-size: 39px;
+font-weight: 600;
+line-height: 50px;
+letter-spacing: 0.02em;
+color: #26306A;
+}
+.main3-hade div{
+  border: 2px solid #25A1FF;
+  width: 140px;
+  border-radius: 3px;
+}
+
+
+
+
+
 @media (max-width:1540px) {
+  .tabels1:nth-child(5){
+    display: none;
+  }
+  .table-detils-head h1:nth-child(6){
+    display: none;
+  }
+  .loader-main{
+   width: 30%;
+  }
   .bitcoin-btc1:nth-child(6){
  display: none;
   }
+  .main1-cards1:nth-child(6){
+    display: none;
+  }
 }
 @media (max-width:1275px) {
+  
+  .tabels1:nth-child(4){
+    display: none;
+  }
+  .table-detils-head h1:nth-child(5){
+    display: none;
+  }
   .bitcoin-btc1:nth-child(5){
     display: none;
      }
+     .main1-cards1:nth-child(5){
+      display: none;
+    }
      .bitcoin-btc1{
       max-width: 115px;
       width: 100%;
@@ -353,13 +532,176 @@ background-color: #25A1FF;
       flex-direction: column-reverse;
      }
 }
-@media (max-width:500px) {
+@media (max-width:1042px){
+  
+  .main-section{
+    margin: 40px 0 0 0 ;
+  }
+  .main1-cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 13px;
+  }
+  .main1-cards1{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    max-width:161px;
+    width: 100%;
+    padding: 0;
+    padding: 24px 12px;
+  }
+  .main1-cards1-deatils{
+    display: none;
+  }
+  .main1-cards1-time {
+    align-items: start ;
+  }
+  .main1-cards1-time h1{
+    text-align: left;
+  }
+  .main1-cards1 p{
+    display: none;
+  }
+   .main1-cards1:nth-child(5), .main1-cards1:nth-child(6){
+    display:  block;
+  }
+  .main1-cards1-image1{
+    flex-direction: row;
+    margin: 0;
+    gap: 8px;
+    margin-bottom: 18px;
+  }
+  .main1-cards{
+    margin: 34px 0 40px 0;
+  }
+  
+  .main1-cards1-image1 h1{
+font-size: 19px;
+font-weight: 600;
+line-height: 23px;
+letter-spacing: 0.02em;
+text-align: center;
+  }
+  .main1-cards1-image1 img{
+    width: 30px;
+    height: 30px;
+  } 
+}
+@media (max-width:540px) {
+  .main-sector-tabel{
+    margin: 40px 0 60px 0;
+  }
   .main2-fonts2-image{
     width: 279px;
     height: 320px;
   }
+  .loader-main{
+  display: none;
+  }
+  .main1-heading{
+    align-items: start;
+  }
+  .main1-cards1{
+    margin: 0;
+  }
+  .table-links{
+    display: none;
+  }
+  .button-table{
+    max-width: 540px;
+    width: 100%;
+    margin-top: 40px;
+  }
 }
   @media (max-width:959px ) {
+    .table-head h1{
+padding: 12px 20px 12px 20px;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+text-align: left;
+
+    }
+    .table-detils{
+      border: none;
+    }
+    .header-main-icon{
+      color: #40476C;
+    }
+    .table-detils-head{
+      padding: 0;
+    }
+    .table-detils-head2{
+      padding: 0;
+    }
+    .tabels2{
+      display: block;
+      width: 105px;
+    }
+    .main-fortable{
+      max-width: 959px;
+      width: 100%;
+      justify-content: center;
+    }
+    .tabel-rack{
+      max-width: 959px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      gap: 10px;
+    }
+    .tabels21{
+      display: flex;
+      gap: 10px;
+    }
+    .tabels21 h1{
+      width: 105px;
+      color: #6A718A;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+    }
+    .tabels21 h1:nth-child(2){
+      color: black;
+
+    }
+     .tabels1{
+      display: none;
+     }
+    .tabels2 h1{
+      color: #6A718A;
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+      text-align: left;
+    }
+    .tabels2 h1:nth-child(2){
+color: black;
+    }
+    .table-head h1:nth-child(4){
+      display: none;
+      
+    }
+    .table-detils-head {
+      gap: 10px;
+      justify-content: left;
+    }
+    .table-detils-head h1{
+width: 105px;
+
+    }
+    .table-detils-head h1:nth-child(1){
+      display: block;
+    }
+    .table-detils-head h1:nth-child(2){
+      display: none;
+    }
+    .table-head{
+     gap: 8px;
+     justify-content: left;
+    }
     .main-header-section{
       padding: 0;
     }
