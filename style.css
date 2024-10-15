@@ -164,6 +164,7 @@ color: #CCCED9;
 margin-bottom: 60px;
 }
 .fonts2-start-button1{
+  font-family: "Roboto";
   width: 177px;
   height: 58px;
 font-size: 18px;
@@ -555,7 +556,7 @@ color: #8C9298;
   letter-spacing: 0.02em;
   text-align: left;
 }
-.main4-sector-fonts-head div{
+.line-for-mai4{
   width: 140px;
   border: 2px solid #25A1FF
 }
@@ -567,6 +568,7 @@ color: #8C9298;
 .start-io1{
   display: flex;
   gap: 8px;
+  align-items: center;
 }
 .start-io1 h1{
 font-size: 19px;
@@ -630,10 +632,177 @@ color: #E9EAF0;
   flex-direction: column;
   gap: 18px;
 }
+.responsive-for-mai4{
+  display: none;
+}
+.class-main4-fontack{
+  display: flex;
+  justify-content: center;
+  justify-content: space-evenly;
+}
+.main4-sector-fonts-head li{
+  color: #CCCED9;
+}
+/* main5 */
+.main5-section-heade{
+  margin: 140px 0;
+}
+.main5-sector{
+  width: 100%;
+  display: inline-flex;
+  justify-content: space-between;
+}
+.main5-head{
+  max-width: 645px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+.main5-hade{
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  align-items: start;
+  margin-bottom: 28px;
+}
+.main5-hade h1{
+font-size: 39px;
+font-weight: 600;
+line-height: 50px;
+letter-spacing: 0.02em;
+color: #26306A;
+}
+.main5-hade div{
+  width: 140px;
+  border: 2px solid #25A1FF;
+  border-radius: 2px;
+}
+.main5-p{
+  margin-bottom: 60px;
+  display: flex;
+  flex-direction: column;
+  gap: 28px;
+}
+.main5-p p{
+font-size: 18px;
+font-weight: 400;
+line-height: 32px;
+color: #8C9298;
+}
+.fonts5-start-button1{
 
+  font-family: "Roboto";
+  width: 177px;
+  height: 58px;
+  font-size: 18px;
+  font-weight: 500;
+  line-height: 26px;
+  text-align: center;
+  color: white;
+  background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
+  border-radius: 4px;
+}
+/* main6 */
+.main6-section{
+  display: flex;
+  flex-direction: column;
+  gap: 80px;
+}
+.main6-head1{
+  display: flex;
+  justify-content: space-between;
+}
+.card1{
+  max-width: 405px;
+  width: 100%;
+  background-color: white;
+  padding: 40px 28px 40px 0;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  border-radius: 10px;
+ 
+}
+.card1-part1{
+  display: flex;
+  flex-direction: column;
+gap: 42px;
+margin-left: 77px;
+margin-bottom: 48px;
+}
+.card1-part1 img{
+  width: 96px;
+height: 96px;
+margin-left: 24.5px;
+}
+.card1-part2-h1{
+  font-size: 23px;
+  font-weight: 600;
+  line-height: 32px;
+  letter-spacing: 0.02em;
+color: #1f2755;
+font-family: "Roboto";  
+}
+.card1-part2-p1{
+  font-family: "Roboto";
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color: #6A718A;
+}
+.card1-part2-p2{
+  font-family: "Roboto";
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color: #6A718A;
+}
+.card1-part2-p3{
+  font-family: "Roboto";
+font-size: 16px;
+font-weight: 400;
+line-height: 26px;
+text-align: center;
+color: #6A718A;
+}
 
-
-
+.card2{
+  opacity:1;
+  max-width: 510px;
+  width: 100%;
+  background-color: white;
+  padding: 40px 28px 40px 28px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 10px;
+}
+.card1-part2{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+gap: 42px;
+margin-bottom: 48px;
+}
+.all-card{
+  max-width: 1380px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.card3{
+  max-width: 405px;
+  width: 100%;
+  background-color: white;
+  padding: 40px 0 40px 28px;
+  align-items: center;
+  justify-content: center;
+  opacity: 0.6;
+  border-radius: 10px;
+}
+.
 
 
 
@@ -656,6 +825,27 @@ color: #E9EAF0;
 
 
 @media (max-width:1540px) {
+  .fonts-start-io1{
+    margin: 0;
+
+  }
+  .main4-sector-image{
+    display: flex;
+    align-items:center ;
+    justify-content: center;
+  }
+  .main4-sector-fonts-head{
+    align-items: center;
+  }
+  .main4-sector-fonts-start{
+    flex-direction: column-reverse;
+  }
+  .fonts-start-io2{
+    margin: 0;
+  }
+  .center-line{
+    display: none;
+  }
   .tabels1:nth-child(5){
     display: none;
   }
@@ -686,7 +876,16 @@ color: #E9EAF0;
   }
 }
 @media (max-width:1275px) {
-  
+  .main5-sector{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+  .main4-section{
+    padding: 40px 0;
+  }
+  .main4-sector-image{
+    margin: 30px 56px;
+  }
   .tabels1:nth-child(4){
     display: none;
   }
@@ -829,8 +1028,94 @@ line-height: 14px;
   .main3-cards{
     gap: 13px;
   }
+  .fonts-start-io1{
+    display: none;
+  }
+  .main4-sector-fonts-head{
+    align-items: start;
+  }
+ 
 }
   @media (max-width:959px ) {
+    .main5-head1{
+      margin:  0 40px;
+    }
+    .main5-sector{
+        gap: 40px;
+    }
+    .main5-section-heade{
+      margin: 40px 0;
+    }
+    .fonts5-start-button1{
+      max-width: 959px ;
+      width: 100%;
+    }
+    .main5-hade h1{
+font-size: 33px;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: 0.02em;
+    }
+    .main5-hade p{
+font-size: 14px;
+font-weight: 400;
+line-height: 22px;
+    }
+    .main4-sector-fonts-head h1{
+font-size: 33px;
+font-weight: 600;
+line-height: 40px;
+letter-spacing: 0.02em;
+    }
+    .main4-sector-fonts-head li{
+font-size: 12px;
+font-weight: 500;
+line-height: 18px;
+    }
+    .fonts-start-io2 h1{
+font-size: 19px;
+font-weight: 600;
+line-height: 23px;
+letter-spacing: 0.02em;
+    }
+    .fonts-start-io2 p{
+      font-size: 12px;
+      font-weight: 400;
+      line-height: 18px;
+    }
+    .class-main4-fontack{
+      flex-direction: column;
+      gap: 18px;
+
+    }
+    .fonts-start-io1{
+      margin-top:32px;
+      align-items: center;
+    }
+    .responsive-for-mai4{
+      display:inline-flex;
+      max-width: 959px ;
+      width: 100%;
+      justify-content: space-between;
+      
+    }
+    .resposive-option{
+      display: flex;
+      flex-direction: column;
+      gap: 4px;
+    }
+
+    .responsive-for-mai4 h1{
+font-size: 12px;
+font-weight: 400;
+line-height: 18px;
+text-align: left;
+color: #8C9298;
+    }
+    .main4-responsive-border{
+      width: 14px;
+      border: 1px solid #8C9298;
+    }
     .main3-sector{
       margin: 0 0  40px 0;
     }
