@@ -704,6 +704,9 @@ color: #8C9298;
   border-radius: 4px;
 }
 /* main6 */
+.main6-sector-head{
+  margin-bottom: 140px;
+}
 .main6-section{
   display: flex;
   flex-direction: column;
@@ -711,7 +714,7 @@ color: #8C9298;
 }
 .main6-head1{
   display: flex;
-  justify-content: space-between;
+  gap: 53px;
 }
 .card1{
   max-width: 405px;
@@ -791,6 +794,7 @@ margin-bottom: 48px;
   width: 100%;
   display: flex;
   justify-content: space-between;
+  align-items: center;
 }
 .card3{
   max-width: 405px;
@@ -802,8 +806,127 @@ margin-bottom: 48px;
   opacity: 0.6;
   border-radius: 10px;
 }
-.
-
+.dots-for-card{
+  max-width:124px;
+  width: 100%;
+  height: 22px;
+  display: flex;
+  margin: 0 auto;
+justify-content: space-between;
+align-items: center;
+}
+.dots-for-card-1{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #CCCED9;
+}
+.dots-for-card-1-io1{
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background-color: #CCCED9;
+}
+/* footer */
+.coin-footer{
+  padding: 60px 0 40px 0  ;
+  color: white; 
+  background-color: #161D26;
+}
+.main-icon-h3{
+  display: flex;
+  align-items: end;
+  max-width: 44px;
+  width: 100%;
+font-size: 28px;
+font-weight: 500;
+line-height: 38px;
+letter-spacing: 0.02em;
+text-align: left;
+margin-right:2px ;
+color: white;
+}
+.main-icon-h4{
+  display: flex;
+  align-items: end;
+  max-width: 46px;
+  width: 100%;
+font-size: 28px;
+font-weight: 500;
+line-height: 38px;
+letter-spacing: 0.02em;
+text-align: left;
+color: white;
+}
+.playstore-link1{
+  display: none;
+}
+.footer-section-head1{
+  padding-bottom: 60px;
+}
+.footer-section-head2{
+  width: 100%;
+  border: 1px solid #212A35;
+  margin-bottom: 80px;
+}
+.footer-section-head3{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.footer-section-head3-passage1,.footer-section-head3-passage2{
+  max-width: 240px;
+  width: 100%;
+  display: flex;
+  gap: 28px;
+  flex-direction: column;
+}
+.head3-passage1-h1{
+  font-size: 19px;
+  font-weight: 500;
+  line-height: 23px;
+  letter-spacing: 0.02em;
+  text-align: left;
+}
+.head3-passage1-p1{
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 26px;
+  text-align: left;
+  color: #CCCED9;
+}
+.head3-passage1-pmain{
+  display: inline-flex;
+   flex-direction: column;
+   gap: 18px;
+}
+.playstore-link{
+  padding: 6px 30px 6px 20px;
+  width: 170px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border:1px solid #E9EAF0;
+  box-shadow: 0px 0px 14px 0px #0000000F;
+  border-radius: 4px;
+}
+.link-fonts-p{
+font-size: 10px;
+font-weight: 400;
+line-height: 14px;
+text-align: left;
+color: #CCCED9;
+}
+.link-fonts-h1{
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
+text-align: left;
+color: #CCCED9;
+}
+.footer-section-head3-passage3{
+  display: none;
+}
 
 
 
@@ -825,6 +948,9 @@ margin-bottom: 48px;
 
 
 @media (max-width:1540px) {
+  .card3{
+    display: none ;
+  }
   .fonts-start-io1{
     margin: 0;
 
@@ -876,6 +1002,12 @@ margin-bottom: 48px;
   }
 }
 @media (max-width:1275px) {
+  .footer-section-head3-passage1:nth-child(5){
+    display: none;
+  }
+  .card1{
+    display: none;
+  }
   .main5-sector{
     flex-direction: column-reverse;
     align-items: center;
@@ -975,6 +1107,37 @@ text-align: center;
   } 
 }
 @media (max-width:540px) {
+  .card1-part2-p1{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+  .card1-part2-p2{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+  .card1-part2-p3{
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 22px;
+    text-align: left;
+  }
+  .card1-part2{
+    margin-bottom: 24px;
+  }
+  .card2{
+    padding: 24px 14px;
+  }
+  .card1-part2 img{
+     width: 68px;
+     height: 68px;
+  }
+  .card1-part2{
+    flex-direction: row;
+  }
   .main-sector-tabel{
     margin: 40px 0 60px 0;
   }
@@ -1037,6 +1200,32 @@ line-height: 14px;
  
 }
   @media (max-width:959px ) {
+    .footer-section-head3-passage2{
+      display: none;
+    }
+    .footer-section-head3-passage3{
+      display: block;
+    }
+    .main6-sector-head{
+      margin-bottom: 40px;
+    }
+    .dots-for-card-1-io1{
+      width: 22px;
+height: 22px;
+background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
+border: 5px solid white;
+outline: 1px solid #0070E4;
+
+    }
+    .all-card{
+      justify-content: center;
+    }
+    .main6-section{
+      gap: 40px;
+    }
+    .image-responsive-main6{
+      display: none;
+    }
     .main5-head1{
       margin:  0 40px;
     }
