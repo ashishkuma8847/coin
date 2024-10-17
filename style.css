@@ -918,13 +918,14 @@ text-align: left;
 color: #CCCED9;
 }
 .link-fonts-h1{
+  width: 86px;
 font-size: 16px;
 font-weight: 500;
 line-height: 24px;
 text-align: left;
 color: #CCCED9;
 }
-.footer-section-head3-passage3{
+.footer-section-head3-deco3{
   display: none;
 }
 
@@ -1197,14 +1198,42 @@ line-height: 14px;
   .main4-sector-fonts-head{
     align-items: start;
   }
+
  
 }
   @media (max-width:959px ) {
+       .playstore-link{
+        padding: 6px 23px 6px 18px;
+       }
+    .coin-footer{
+      padding: 40px 0;
+    }
+    .footer-section-head3-deco3{
+          display: flex block;
+          flex-direction: column;
+          gap: 18px;
+    }
+  
+    .footer-section-head1{
+      padding-bottom: 20px;
+    }
+    .footer-section-head2{
+      margin-bottom: 40px;
+    }
+    .footer-section-head3{
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      column-gap: 13px  ;
+      row-gap: 30px;
+      margin-bottom: 30px;
+    }
+    .playstate{
+      display: flex;
+      gap: 13px;
+    }
     .footer-section-head3-passage2{
       display: none;
-    }
-    .footer-section-head3-passage3{
-      display: block;
     }
     .main6-sector-head{
       margin-bottom: 40px;
