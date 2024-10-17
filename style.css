@@ -163,35 +163,45 @@ text-align: left;
 margin-bottom: 60px;
 
 }
+
+
+
 .fonts2-start-button1{
+cursor: pointer;
   width:177px;
 height: 58px;
 padding: 6px;
 border-radius: 4px ;
 background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
 }
-.fonts2-start-button2{
-  width:100%;
-  height: 100%;
-  border-radius: 4px;
-background:white ;
-}
-.fonts2-start-button3{
-  height: 100%;
-  color: white;
-  background-clip: text;
-  color: transparent;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-}
 .fonts2-start-button3 p{
+  height: 100%;
+  width: 100%;
 font-size: 18px;
 font-weight: 500;
 line-height: 26px;
 text-align: left;
 }
-.fonts2-start-button3 p:hover,.fonts2-start-button3:hover,.fonts2-start-button2:hover{}
+.fonts2-start-button2{
+  transition: all 0.5s ease-in-out;
+  padding: 13px 10px 10px 28px;
+  width: 100%;
+  height: 100%;
+}
+.onts2-start-button3{
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+.fonts2-start-button3:hover{
+  background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
+  background-clip: text;
+  color: transparent;
+}
+.fonts2-start-button2:hover{
+  background-color: white;
+
+}
 
 
 
