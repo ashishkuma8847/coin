@@ -174,6 +174,14 @@ padding: 6px;
 border-radius: 4px ;
 background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
 }
+.fonts2-start-button-io1{
+  cursor: pointer;
+width: 189px;
+height: 58px;
+padding: 6px;
+border-radius: 4px ;
+background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
+}
 .fonts2-start-button3 p{
   height: 100%;
   width: 100%;
@@ -184,16 +192,39 @@ text-align: left;
 }
 .fonts2-start-button2{
   transition: all 0.5s ease-in-out;
-  padding: 13px 10px 10px 28px;
   width: 100%;
   height: 100%;
+  border-radius: 4px  ;
 }
-.onts2-start-button3{
+.fonts2-start-button3{
+  padding: 13px 27px 10px 28px;
   transition: all 0.5s ease-in-out;
   height: 100%;
   width: 100%;
 }
-.fonts2-start-button3:hover{
+.fonts2-start-button-io2{
+  padding: 13px 13px 10px 14px;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+.fonts2-start-button-io2 p{
+  font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+}
+.fonts2-start-button-io3{
+  padding: 13px 39px 10px 40px;
+  transition: all 0.5s ease-in-out;
+  height: 100%;
+  width: 100%;
+}
+.fonts2-start-button-io3 p{
+font-size: 18px;
+font-weight: 500;
+line-height: 26px;
+}
+.fonts2-start-button3:hover,.fonts2-start-button-io3:hover,.fonts2-start-button-io2:hover{
   background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
   background-clip: text;
   color: transparent;
@@ -768,19 +799,6 @@ font-size: 18px;
 font-weight: 400;
 line-height: 32px;
 color: #8C9298;
-}
-.fonts5-start-button1{
-
-  font-family: "Roboto";
-  width: 177px;
-  height: 58px;
-  font-size: 18px;
-  font-weight: 500;
-  line-height: 26px;
-  text-align: center;
-  color: white;
-  background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
-  border-radius: 4px;
 }
 /* main6 */
 .main6-sector-head{
