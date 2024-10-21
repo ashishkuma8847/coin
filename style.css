@@ -940,6 +940,7 @@ color: #8C9298;
 }
 .main6-head1{
   display: flex;
+  align-items: center;
   gap: 53px;
 }
 .card1{
@@ -1022,11 +1023,11 @@ gap: 42px;
 margin-bottom: 48px;
 }
 .all-card{
-  max-width: 1380px;
+  min-width: 1380px;
+  overflow: hidden;
   width: 100%;
   display: flex;
-  justify-content: space-between;
-  align-items: center;
+  align-items: start;
 }
 .card3{
   cursor: pointer;
@@ -1867,3 +1868,50 @@ text-align: center;
       gap: 30px;
     }
   }
+
+
+ 
+
+
+  .swiper-slide {
+  border-radius: 10px;
+    text-align: center;
+    font-size: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .swiper-slide img {
+    display: block;
+    object-fit: cover;
+  }
+  .edit .swiper-pagination-bullet{
+    background-color: #CCCED9;
+    width: 10px;
+    height: 10px;
+  }
+  .swiper-pagination-bullet-active{
+    width: 22px !important;
+    height: 22px !important;
+    background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%) !important;
+    border: 5px solid white ;
+    outline: 1px solid #0070E4;
+     
+  }
+
+  .swiper-pagination{
+   position: relative !important;
+   top: 0px !important;
+    height:22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }  
+  .swiper-slide{
+    opacity: 0.6 !important;
+  }
+  .swiper-slide-next{
+    opacity: 1 !important;
+  }
+  
