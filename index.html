@@ -156,7 +156,28 @@
           <div></div>
         </div>
         <div class="main1-cards">
-          <div class="main1-cards1">
+          <div class="swiper mySwiper1">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">Slide 1</div>
+              <div class="swiper-slide">Slide 2</div>
+              <div class="swiper-slide">Slide 3</div>
+              <div class="swiper-slide">Slide 4</div>
+              <div class="swiper-slide">Slide 5</div>
+              <div class="swiper-slide">Slide 6</div>
+              <div class="swiper-slide">Slide 7</div>
+              <div class="swiper-slide">Slide 8</div>
+              <div class="swiper-slide">Slide 9</div>
+            </div>
+           
+            
+            <div class="swiper-pagination"></div>
+          </div>
+
+
+
+
+
+          <!-- <div class="main1-cards1">
             <div class="main1-cards1-image1">
               <img src="./images/himage.svg" alt="io">
               <h1>Husd Coin</h1>
@@ -256,12 +277,12 @@
                 <button>52h : 48s : 22s</button>
               </div>
             </div>
-          </div>
+          </div> -->
         </div>
-        <div class="loading">
+        <!-- <div class="loading">
 
           <div class="loader-main"></div>
-        </div>
+        </div> -->
       </div>
     </div>
 
@@ -895,9 +916,9 @@
 
                     <p class="card1-part2-p1"> It is a long established fact that a reader will </p>
                     <p class="card1-part2-p2">
-                      be distracted by the readable content of a page when
+                      be distracted by the readable content of a page when looking at its layout. “
                     </p>
-                    <p class="card1-part2-p3">looking at its layout. “</p>
+                    <!-- <p class="card1-part2-p3">looking at its layout. “</p> -->
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -909,9 +930,9 @@
 
                     <p class="card1-part2-p1"> It is a long established fact that a reader will </p>
                     <p class="card1-part2-p2">
-                      be distracted by the readable content of a page when
+                      be distracted by the readable content of a page when looking at its layout. “
                     </p>
-                    <p class="card1-part2-p3">looking at its layout. “</p>
+                    <!-- <p class="card1-part2-p3">looking at its layout. “</p> -->
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -923,9 +944,9 @@
 
                     <p class="card1-part2-p1"> It is a long established fact that a reader will </p>
                     <p class="card1-part2-p2">
-                      be distracted by the readable content of a page when
+                      be distracted by the readable content of a page when looking at its layout. “
                     </p>
-                    <p class="card1-part2-p3">looking at its layout. “</p>
+                    <!-- <p class="card1-part2-p3">looking at its layout. “</p> -->
                   </div>
                 </div>
                 <div class="swiper-slide">
@@ -937,37 +958,39 @@
 
                     <p class="card1-part2-p1"> It is a long established fact that a reader will </p>
                     <p class="card1-part2-p2">
-                      be distracted by the readable content of a page when
+                      be distracted by the readable content of a page when looking at its layout. “
                     </p>
-                    <p class="card1-part2-p3">looking at its layout. “</p>
+                    <!-- <p class="card1-part2-p3">looking at its layout. “</p> -->
                   </div>
                 </div>
 
               </div>
 
+            </div>
 
-              
-             
+
+
+
 
           </div>
-        <!-- </div>
+          <!-- </div>
         <div class="dots-for-card">
           <div class="dots-for-card-1-io1"></div>
           <div class="dots-for-card-1"></div>
           <div class="dots-for-card-1"></div>
           <div class="dots-for-card-1"></div>
         </div> -->
-      </div>
-      <div class="swiper-next">
-        <img class="image-responsive-main6" src="./images/arrowright.svg" alt="io">
+          <div class="swiper-next">
+            <img class="image-responsive-main6" src="./images/arrowright.svg" alt="io">
 
+          </div>
+        </div>
+        <div class="swiper-pagination edit"></div>
       </div>
+
     </div>
-
-    <div class="swiper-pagination edit">dsadusiuo</div>
-  </div>
   </main>
-  <footer class="coin-footer">
+    <footer class="coin-footer">
     <div class="container">
 
       <div class="footer-section-head1">
@@ -1079,7 +1102,9 @@
     <div class="container">
       <div class="footer1-mainsection">
         <div class="footer1-mainsection1">
-          <h1 class="footer1-h1">Ⓒ</h1>
+          
+
+            <h1 class="footer1-h2">Ⓒ</h1>
           <h1 class="footer1-h1">All Rights Reserved by dynamic.</h1>
         </div>
         <div class="footer1-mainsection2">
@@ -1098,24 +1123,51 @@
   <!-- Initialize Swiper -->
   <script>
     var swiper = new Swiper(".mySwiper", {
-      loop: true,
       spaceBetween: 30,
-      slidesPerView: 3,
+      slidesPerView: 1,
       autoplay: {
         delay: 1000,
         disableOnInteraction: false,
       },
-      cssMode: true,
       navigation: {
         nextEl: ".swiper-next",
         prevEl: ".swiper-prev",
       },
       pagination: {
         el: ".swiper-pagination ",
+        clickable: true,
       },
-      mousewheel: true,
+      loop: true,
       keyboard: true,
+      centeredSlides: true,
+      grabCursor: true,
+      breakpoints: {
+        300: {
+          slidesPerView: 1,
+          spaceBetween: 0,
+        },
+        700: {
+          slidesPerView: 1.5,
+          spaceBetween: 10,
+        },
+        1200: {
+          slidesPerView: 1.8,
+          spaceBetween: 30,
+        },
+        1400: {
+          slidesPerView: 2.5,
+          spaceBetween: 30,
+        },
+      },
+
     });
+    var swiper = new Swiper(".mySwiper1", {
+          pagination: {
+            el: ".swiper-pagination",
+            type: "progressbar",
+          },
+         
+        });
   </script>
 </body>
 

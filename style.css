@@ -35,7 +35,7 @@ button {
   
   body {
     font-family: "Roboto", sans-serif;
-    background: linear-gradient(94.21deg, rgba(231, 180, 80, 0.087) 3.29%, rgba(236, 52, 209, 0.087) 97.52%);
+    background: linear-gradient(94.21deg, rgba(231, 180, 80, 0.087) 3.29%, rgb(237 132 221 / 9%) 97.52%);
   }
   .main-header-section{
     padding: 42px 0 50px 0 ;
@@ -940,6 +940,7 @@ color: #8C9298;
 }
 .main6-head1{
   display: flex;
+  justify-content: center;
   align-items: center;
   gap: 53px;
 }
@@ -968,6 +969,8 @@ height: 96px;
 margin-left: 24.5px;
 }
 .card1-part2-h1{
+  max-width: 384px;
+  width: 100%;
   font-size: 23px;
   font-weight: 600;
   line-height: 32px;
@@ -984,6 +987,8 @@ text-align: center;
 color: #6A718A;
 }
 .card1-part2-p2{
+  max-width: 384px;
+  width: 100%;
   font-family: "Roboto";
 font-size: 16px;
 font-weight: 400;
@@ -1004,17 +1009,23 @@ color: #6A718A;
 
 }
 .card2{
+ display: flex;
+ flex-direction: column;
+ justify-content: center;
   cursor: pointer;
   transition: all 0.5s ease-in-out;
   opacity:1;
-  max-width: 510px;
-  width: 100%;
+ 
   background-color: white;
   padding: 40px 28px 40px 28px;
   align-items: center;
   justify-content: center;
   border-radius: 10px;
 }
+/* .swiper-slide{
+  min-width: 510px;
+  width: 100%;
+} */
 .card1-part2{
   display: flex;
   flex-direction: column;
@@ -1023,23 +1034,20 @@ gap: 42px;
 margin-bottom: 48px;
 }
 .all-card{
-  min-width: 1380px;
-  overflow: hidden;
+  max-width: 1380px;
   width: 100%;
   display: flex;
   align-items: start;
 }
-.card3{
-  cursor: pointer;
-  max-width: 405px;
+/* .all-card .swiper-wrapper{
   width: 100%;
-  background-color: white;
-  padding: 40px 0 40px 28px;
+  overflow: hidden;
+  background-position: center;
+  display: flex;
   align-items: center;
   justify-content: center;
-  opacity: 0.6;
-  border-radius: 10px;
-}
+} */
+
 .dots-for-card{
   max-width:124px;
   width: 100%;
@@ -1211,6 +1219,14 @@ font-weight: 400;
 line-height: 26px;
 text-align: left;
 }
+.footer1-h2{
+  height: 13px;
+line-height: 26px;
+  font-size: 16px;
+font-weight: 400;
+text-align: left;
+
+}
 .footer1-mainsection2{
   width:184px ;
   display: inline-flex;
@@ -1241,8 +1257,17 @@ text-align: left;
 .table-detils-head-io1{
   display: none;
 }
-
+@media (max-width:1636px) {
+  .swiper-prev{
+    display: none;
+  }
+  .swiper-next{
+    display: none;
+  }
+  
+}
 @media (max-width:1540px) {
+
   .table1-head-h3{
    display: none;
   }
@@ -1299,6 +1324,7 @@ text-align: left;
   }
 }
 @media (max-width:1275px) {
+ 
   .table-head h1:nth-child(4){
    display: none;
   }
@@ -1445,6 +1471,11 @@ color: #6A718A;
     width: 100%;
     padding: 0;
     padding: 24px 12px;
+    
+  }
+  .card1-part2{
+    flex-direction: row;
+    margin-bottom: 24px;
   }
   .main1-cards1-deatils{
     display: none;
@@ -1484,6 +1515,19 @@ text-align: center;
   } 
 }
 @media (max-width:540px) {
+  .main4-sector-fonts-head::before{
+    display: none;
+  }
+  .card2{
+    padding: 24px 14px;
+  }
+  .swiper-slide{
+    opacity: 1 !important;
+  }
+  .card2{
+    align-items: start;
+    justify-content: left;
+  }
   .fonts2-start-button1{
     max-width: 959px;
     width: 100%;
@@ -1519,19 +1563,14 @@ text-align: center;
     line-height: 22px;
     text-align: left;
   }
-  .card1-part2{
-    margin-bottom: 24px;
-  }
-  .card2{
-    padding: 24px 14px;
-  }
+  
+
+ 
   .card1-part2 img{
      width: 68px;
      height: 68px;
   }
-  .card1-part2{
-    flex-direction: row;
-  }
+  
   .main-sector-tabel{
     margin: 40px 0 60px 0;
   }
@@ -1587,6 +1626,25 @@ line-height: 14px;
   }
 
  
+}
+@media (max-width:325px) {
+  .card1-part2{
+    gap: 12px;
+
+  }
+  .main1-cards{
+    grid-template-columns: 1fr;
+  }  
+  .responsive-h2{
+    display: none;
+  }
+  .table1-responsive-io1:nth-child(3){
+    display: none;
+  }
+  .table-head h1:nth-child(3){
+display: none;
+  }
+
 }
   @media (max-width:959px ) {
     .main1-cards1{
@@ -1874,6 +1932,7 @@ text-align: center;
 
 
   .swiper-slide {
+   
   border-radius: 10px;
     text-align: center;
     font-size: 18px;
@@ -1911,7 +1970,14 @@ text-align: center;
   .swiper-slide{
     opacity: 0.6 !important;
   }
-  .swiper-slide-next{
+  
+  .swiper-slide-active{
     opacity: 1 !important;
   }
   
+  @media(max-width:300px){
+    .swiper-slide{
+      max-width: 335px;
+      width: 100%;
+    }
+  }
