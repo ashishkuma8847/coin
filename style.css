@@ -782,6 +782,7 @@ background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
   gap: 22px;
 }
 .start-io1{
+  width: 170px;
   display: flex;
   gap: 8px;
   align-items: center;
@@ -1515,9 +1516,7 @@ text-align: center;
   } 
 }
 @media (max-width:540px) {
-  .main4-sector-fonts-head::before{
-    display: none;
-  }
+  
   .card2{
     padding: 24px 14px;
   }
@@ -1627,7 +1626,7 @@ line-height: 14px;
 
  
 }
-@media (max-width:325px) {
+@media (max-width:368px) {
   .card1-part2{
     gap: 12px;
 
@@ -1647,6 +1646,9 @@ display: none;
 
 }
   @media (max-width:959px ) {
+    .main4-sector-fonts-head::before{
+      display: none;
+    }
     .main1-cards1{
       max-width: 959px;
       width: 100%;
@@ -1967,14 +1969,15 @@ text-align: center;
     align-items: center;
     justify-content: center;
   }  
-  .swiper-slide{
-    opacity: 0.6 !important;
+  .swiper-slide {
+  opacity: 0.6 !important;
+
   }
   
   .swiper-slide-active{
     opacity: 1 !important;
   }
-  
+ 
   @media(max-width:300px){
     .swiper-slide{
       max-width: 335px;
