@@ -66,6 +66,7 @@ button {
     
   }
   .main-icon-p1{
+    color: #f0f1f5de;
     display: flex;
     gap: 8px;
 font-size: 16px;
@@ -198,74 +199,38 @@ cursor: pointer;
   width:177px;
 height: 58px;
 padding: 6px;
+transition: all 0.5s linear;
 border-radius: 4px ;
 background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
 }
+.fonts2-start-button1:hover,.fonts2-start-button-io1:hover{
+background: linear-gradient(94.58deg, #0181e4 0%, #3d95f3 100%);
+
+}
 .fonts2-start-button-io1{
+  display: flex;
+  transition: all 0.5s linear;
+  justify-content: center;
+  align-items: center;
   cursor: pointer;
 width: 189px;
 height: 58px;
-padding: 6px;
 border-radius: 4px ;
 background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
-}
-.fonts2-start-button3 p{
-  height: 100%;
-  width: 100%;
-font-size: 18px;
-font-weight: 500;
-line-height: 26px;
-text-align: left;
-}
-.fonts2-start-button2{
-  transition: all 0.5s ease-in-out;
-  width: 100%;
-  height: 100%;
-  border-radius: 4px  ;
-}
-.fonts2-start-button3{
-  padding: 11px 27px 13px 28px;
-  transition: all 0.5s ease-in-out;
-  height: 100%;
-  width: 100%;
-}
-.fonts2-start-button-io2{
-  padding: 11px 13px 13px 14px;
-  transition: all 0.5s ease-in-out;
-  height: 100%;
-  width: 100%;
-}
-.fonts2-start-button-io2 p{
-  font-size: 18px;
-font-weight: 500;
-line-height: 26px;
-}
-.fonts2-start-button-io3{
-  padding: 11px 39px 13px 40px;
-  transition: all 0.5s ease-in-out;
-  height: 100%;
-  width: 100%;
-}
-.fonts2-start-button-io3 p{
+color: white;
 font-size: 18px;
 font-weight: 500;
 line-height: 26px;
 }
-.fonts2-start-button3:hover,.fonts2-start-button-io3:hover,.fonts2-start-button-io2:hover{
-  background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
-  background-clip: text;
-  color: transparent;
-}
-.fonts2-start-button2:hover{
-  background-color: white;
-
-}
 
 
 
 
-/* .fonts2-start-button1{
-  font-family: "Roboto";
+
+.fonts2-start-button1{
+  display: flex;
+  align-items: center;
+  justify-content: center;
   width: 177px;
   height: 58px;
 font-size: 18px;
@@ -275,7 +240,7 @@ text-align: center;
 color: white;
 background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
 border-radius: 4px;
-} */
+}
 .header-main2-fonts2{
   color: white;
  display: flex;
@@ -294,7 +259,7 @@ border-radius: 4px;
   border-radius:4px ;
 
 }
-.btc-fonts h1{
+.btc-fonts h4{
   width: 82px;
 font-size: 14px;
 font-weight: 400;
@@ -389,7 +354,7 @@ margin-bottom: 37px;
   background-color: white;
   border-radius: 50%;
 }
-.main1-cards1-image1 h1{
+.main1-cards1-image1 h4{
   font-size: 23px;
   font-weight: 600;
   line-height: 32px;
@@ -419,7 +384,7 @@ color: #CCCED9;
   margin-bottom: 12px;
 }
 
-.main1-cards1-time h1{
+.main1-cards1-time p{
   font-size: 14px;
   font-weight: 500;
   line-height: 17px;
@@ -579,38 +544,14 @@ color: #40476C;
   color: white;
   width: 72px;
   height: 37px;
-  background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
+   border: 1px solid #25A1FF;
   padding: 1.3px;
   border-radius: 4px;
-}
-.fonts2-start-button-deco23{
-  transition: all 0.5s ease-in-out;
-
-  width: 100%;
-  height: 100%;
-  background: transparent;
-  border-radius: 4px;
-}
-.fonts2-start-button-deco34{
-  transition: all 0.5s ease-in-out;
-
-  padding: 10px 7px 10px 6px;
-
-}
-.fonts2-start-button-deco34 p{
-  text-align: center;
-font-size: 14px;
-font-weight: 500;
-line-height: 17px;
-}
-.fonts2-start-button-deco23:hover{
-  background-color: white;
-}
-.fonts2-start-button-deco34 p:hover{
   background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
   background-clip: text;
   color: transparent;
 }
+
 
 
 
@@ -648,11 +589,27 @@ text-align: center;
 .main3-hade{
   cursor: pointer;
   display: flex;
+  height: 64px;
   flex-direction: column;
   align-items: center;
-  gap: 18px;
+  position: relative;
 }
-.main3-hade h1{
+.main3-hade::before{
+  content: "";
+  width: 140px;
+  height: 2px;
+  transition: all 0.5s ease-in-out;
+
+  background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
+  position: absolute;
+  bottom: 0;
+}
+.main3-hade:hover::before{
+width: 300px;
+}
+
+
+.main3-hade h4{
 font-size: 39px;
 font-weight: 600;
 line-height: 50px;
@@ -712,12 +669,18 @@ text-align: left;
 color: #8C9298;
 }
 .for-linking{
+  font-family: "Roboto";
+  width: 100%;
   display: flex;
   align-items: center;
   gap: 8px;
+  transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
-.for-linking h1{
+.for-linking:hover{
+  gap: 15px;
+}
+.for-linking h4{
   width: 130px;
   height: 24px;
   font-size: 16px;
@@ -744,6 +707,8 @@ color: #8C9298;
   color: white;
 }
 .main4-sector-fonts-head{
+  width: 300px;
+  height: 68px;
   cursor: pointer;
    display: flex;
    flex-direction: column;
@@ -878,6 +843,8 @@ color: #E9EAF0;
 }
 
 .main5-hade{
+  max-width: 559px;
+  height: 68px;
   cursor: pointer;
   display: flex;
   flex-direction: column;
