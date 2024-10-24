@@ -34,7 +34,7 @@ button {
   }
   
   body {
-    font-family: "Roboto", sans-serif;
+    font-family: "Roboto";
     background: linear-gradient(94.21deg, rgba(231, 180, 80, 0.087) 3.29%, rgb(237 132 221 / 9%) 97.52%);
   }
   .main-header-section{
@@ -51,8 +51,9 @@ button {
     align-items: center;
   }
   .header-main-icon{
+    align-items: end;
     display: flex;
-    max-width: 153px;
+    max-width: 178px;
     width: 100%;
   }
   .header-main-icon1{
@@ -66,7 +67,7 @@ button {
     
   }
   .main-icon-p1{
-    color: #f0f1f5de;
+    color: #F0F1F5;
     display: flex;
     gap: 8px;
 font-size: 16px;
@@ -94,11 +95,16 @@ position: relative;
 
 
   .header-main-icon2{
+    align-items: center;
     max-width: 369px;
     width: 100%;
     justify-content: space-between;
     display: flex;
-    align-items: center;
+  }
+  .for-main-desk{
+    display: flex;
+    align-items: end;
+    gap: 2px;
   }
   .main-icon-h1{
     display: flex;
@@ -109,7 +115,6 @@ font-size: 28px;
 font-weight: 500;
 line-height: 38px;
 letter-spacing: 0.02em;
-text-align: left;
 margin-right:2px ;
   }
   .main-icon-h2{
@@ -125,13 +130,13 @@ text-align: left;
   }
   .main-icon-span2{
     width: 19px;
+    line-height: 38px;
   }
   .main-icon-span1{
+    line-height: 33px;
     width: 28px;
 font-size: 18px;
 font-weight: 400;
-line-height: 32px;
-text-align: left;
   }
 
   .main-icon2-p1{
@@ -139,7 +144,7 @@ text-align: left;
 font-size: 14px;
 font-weight: 400;
 line-height: 22px;
-text-align: left;
+color: #E9EAF0;
   }
   .main-icon2-button1{
     width: 189px;
@@ -148,7 +153,6 @@ text-align: left;
 font-size: 18px;
 font-weight: 500;
 line-height: 26px;
-text-align: left;
 color: white;
 text-align: center;
 border-radius: 4px;
@@ -172,7 +176,6 @@ font-size: 72px;
 font-weight: 800;
 line-height: 92.4px;
 letter-spacing: 0.02em;
-text-align: left;
 margin-bottom: 28px;
 }
 .fonts2-start-span1:hover{
@@ -184,6 +187,7 @@ margin-bottom: 28px;
   transition: all 0.5s ease-in-out;
 }
 .fonts2-start-p1{
+  color: #CCCED9;
 font-size: 18px;
 font-weight: 400;
 line-height: 32px;
@@ -208,6 +212,7 @@ background: linear-gradient(94.58deg, #0181e4 0%, #3d95f3 100%);
 
 }
 .fonts2-start-button-io1{
+  font-family: "Roboto";
   display: flex;
   transition: all 0.5s linear;
   justify-content: center;
@@ -228,6 +233,7 @@ line-height: 26px;
 
 
 .fonts2-start-button1{
+  font-family: "Roboto";
   display: flex;
   align-items: center;
   justify-content: center;
@@ -245,7 +251,7 @@ border-radius: 4px;
   color: white;
  display: flex;
  justify-content: space-between;
- padding: 25px 0 0 0;
+ padding: 25px 0 0 0; 
 }
 .bitcoin-btc1{
   cursor: pointer;
@@ -334,7 +340,7 @@ margin: 80px 0;
   transition: all 0.5s ease-in-out;
   background-color: #191a51;
   max-width: 240px;
-  padding: 18px 32px;
+  padding: 32px 18px;
   align-items: center;
   justify-content: center;
  border-radius: 10px;
@@ -430,24 +436,24 @@ background-color: #25A1FF;
   cursor: pointer;
   max-width: 506px;
   width: 100%;
-  justify-content: space-between;
+  gap: 12px;
   align-items: center;
   display: flex;
 }
+
 .table-detils{
   border: 1px solid #E9EAF0;
 border-radius: 0px 0px 10px 10px;
 
 }
-.table-head h1{
+.table-head a{
   padding: 12px 24px;
-font-size: 16px;
 border-radius: 10px;
-font-weight: 500;
 background-color: #EEF7FF99;
-line-height: 24px;
-text-align: left;
 color: #0091FF;
+font-size: 16px;
+font-weight: 500;
+line-height: 24px;
 }
 .table-head h1:hover{
   background-color:#cfe5f6 ;
@@ -493,6 +499,10 @@ color: #6A718A;
   justify-content: space-between;
   height: 77px;
   padding: 0 24px;
+  transition: all 0.3s ease-in-out;
+}
+.table-detils-head2:hover{
+  background-color: #eaedfd;
 }
 .table1-deco1{
   max-width: 190px;
@@ -512,7 +522,9 @@ color: #6A718A;
   display: flex;
   gap: 80px;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
+
 .table-detils-main1{
   display: flex;
   flex-direction: column;
@@ -597,9 +609,8 @@ text-align: center;
 .main3-hade::before{
   content: "";
   width: 140px;
-  height: 2px;
+  height: 3px;
   transition: all 0.5s ease-in-out;
-
   background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
   position: absolute;
   bottom: 0;
@@ -612,7 +623,7 @@ width: 300px;
 .main3-hade h4{
 font-size: 39px;
 font-weight: 600;
-line-height: 50px;
+height: 50px;
 letter-spacing: 0.02em;
 color: #26306A;
 }
@@ -653,7 +664,7 @@ height: 38px;
   flex-direction: column;
   gap: 12px;
 }
-.for-fonts h1{
+.for-fonts h4{
 font-size: 19px;
 font-weight: 600;
 line-height: 24px;
@@ -752,7 +763,7 @@ background: linear-gradient(94.58deg, #25A1FF 0%, #0070E4 100%);
   gap: 8px;
   align-items: center;
 }
-.start-io1 h1{
+.start-io1 h4{
 font-size: 19px;
 font-weight: 400;
 line-height: 24px;
@@ -873,7 +884,7 @@ color: #E9EAF0;
 
 
 
-.main5-hade h1{
+.main5-hade h4{
 font-size: 39px;
 font-weight: 600;
 line-height: 50px;
@@ -1225,6 +1236,7 @@ text-align: left;
 .table-detils-head-io1{
   display: none;
 }
+
 @media (max-width:1636px) {
   .swiper-prev{
     display: none;
@@ -1293,9 +1305,7 @@ text-align: left;
 }
 @media (max-width:1275px) {
  
-  .table-head h1:nth-child(4){
-   display: none;
-  }
+ 
   .loading{
    display: none;
   }
@@ -1424,7 +1434,7 @@ color: #6A718A;
 @media (max-width:1042px){
   
   .main-section{
-    margin:  0 0 40px 0 ;
+    margin:  40px 0 40px 0 ;
   }
   .main1-cards{
     display: grid;
@@ -1478,11 +1488,24 @@ letter-spacing: 0.02em;
 text-align: center;
   }
   .main1-cards1-image1 img{
+    padding: 4px;
     width: 30px;
     height: 30px;
   } 
 }
-@media (max-width:540px) {
+.losers{
+  width: 110px;
+}
+.gainers{
+  width: 115px;
+}
+  .table-head a{
+padding: 12px 20px;
+font-size: 14px;
+font-weight: 500;
+line-height: 17px;
+  }
+ 
   
   .card2{
     padding: 24px 14px;
@@ -1571,7 +1594,7 @@ text-align: center;
   .main3-hade{
     align-items: start;
   }
-  .for-fonts h1{
+  .for-fonts h4{
 font-size: 16px;
 font-weight: 500;
 line-height: 24px;
@@ -1757,7 +1780,7 @@ letter-spacing: 0.02em;
       gap: 4px;
     }
 
-    .responsive-for-mai4 h1{
+    .responsive-for-mai4 h4{
 font-size: 12px;
 font-weight: 400;
 line-height: 18px;
