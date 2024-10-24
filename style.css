@@ -1492,7 +1492,7 @@ text-align: center;
     width: 30px;
     height: 30px;
   } 
-}
+
 .losers{
   width: 110px;
 }
@@ -1636,6 +1636,15 @@ display: none;
 
 }
   @media (max-width:959px ) {
+    .table-head{
+      gap: 8px;
+    }
+    .others{
+      display: none;
+    }
+    .table-head a{
+      padding: 12px 19px;
+    }
     .main4-sector-fonts-head::before{
       display: none;
     }
