@@ -1332,10 +1332,10 @@ text-align: left;
 .swiper-next{
   cursor: pointer;
 }
-.main4-sector-image img,.main2-fonts2-image img{
+.main4-sector-image img,.header-main2-fonts1 img{
   transition: all 0.5s ease-in-out;
 }
-.main4-sector-image img:hover,.main2-fonts2-image img:hover{
+.main4-sector-image img:hover,.header-main2-fonts1:hover img{
   filter: drop-shadow(10px 10px 10px #25a1ff);
 }
 .main5-head1 img{
