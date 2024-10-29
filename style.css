@@ -692,7 +692,7 @@ color: #26306A;
   height: 440px;
 }
 .main3-cards1:hover{
-  box-shadow: 3px 4px 12px 1px #00000040;
+  filter: drop-shadow(3px 3px 10px rgb(75, 74, 74));
 }
 .main3-cards:hover > :not(:hover){
   opacity: 0.6;
